@@ -1,38 +1,65 @@
 {
-  "name": "vue-contenteditable",
-  "version": "1.0.2",
-  "description": "Vue.js plugin providing a <contenteditable/> element supporting v-model. It also provides some (optional) features, like preventing html input / paste or new lines.",
-  "keywords": [
-    "Vue",
-    "directive",
-    "contenteditable"
+  "_from": "vue-contenteditable@1.0.2",
+  "_id": "vue-contenteditable@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-waDqyBeABXrlOQ5pC49xLP6fj/+yEfzMV17qUs612JmbR/Tg6NAOaazkvyx3qZz8/j0Gvv5WzR1iJHgdNk4kTw==",
+  "_location": "/vue-contenteditable",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "vue-contenteditable@1.0.2",
+    "name": "vue-contenteditable",
+    "escapedName": "vue-contenteditable",
+    "rawSpec": "1.0.2",
+    "saveSpec": null,
+    "fetchSpec": "1.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "homepage": "https://github.com/hl037/vue-contenteditable",
-  "bugs": "https://github.com/hl037/vue-contenteditable/issues",
-  "license": "MIT",
+  "_resolved": "https://registry.npmjs.org/vue-contenteditable/-/vue-contenteditable-1.0.2.tgz",
+  "_shasum": "144e715cbd55cf80aa17e8b86f89532d917683d0",
+  "_spec": "vue-contenteditable@1.0.2",
+  "_where": "C:\\Dev\\VRI",
   "author": {
     "name": "Léo Flaventin Hauchecorne",
     "email": "hl037.prog@gmail.com",
     "url": "http://leo-flaventin.com"
   },
-  "main": "dist/contenteditable.umd.js",
-  "module": "dist/contenteditable.esm.js",
-  "unpkg": "dist/contenteditable.min.js",
   "browser": {
     "./sfc": "src/contenteditable.vue"
   },
-  "scripts": {
-    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/contenteditable.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/contenteditable.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/contenteditable.min.js"
+  "bugs": {
+    "url": "https://github.com/hl037/vue-contenteditable/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Vue.js plugin providing a <contenteditable/> element supporting v-model. It also provides some (optional) features, like preventing html input / paste or new lines.",
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.2.31",
-    "rollup": "^2.70.0",
-    "rollup-plugin-buble": "^0.19.8",
-    "rollup-plugin-vue": "^6.0.0",
+    "rollup": "^0.57.1",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-vue": "^3.0.0",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16"
-  }
+  },
+  "homepage": "https://github.com/hl037/vue-contenteditable",
+  "keywords": [
+    "Vue",
+    "directive",
+    "contenteditable"
+  ],
+  "license": "MIT",
+  "main": "dist/contenteditable.umd.js",
+  "module": "dist/contenteditable.esm.js",
+  "name": "vue-contenteditable",
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/contenteditable.esm.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/contenteditable.umd.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/contenteditable.min.js"
+  },
+  "unpkg": "dist/contenteditable.min.js",
+  "version": "1.0.2"
 }
