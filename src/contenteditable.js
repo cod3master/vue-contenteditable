@@ -1,19 +1,19 @@
 import c from './contenteditable.vue'
 
 const contenteditable = {
-  install(Vue){
+  install(Vue) {
     Vue.component(c.name, c)
   }
 }
 
-let GlobalVue = null;
+let GlobalVue = null
 if (typeof window !== 'undefined') {
-    GlobalVue = window.Vue;
+  GlobalVue = window.Vue
 } else if (typeof global !== 'undefined') {
-    GlobalVue = global.Vue;
+  GlobalVue = global.Vue
 }
 if (GlobalVue) {
-    GlobalVue.use(contenteditable);
+  GlobalVue.use(contenteditable)
 }
 
 export default contenteditable
